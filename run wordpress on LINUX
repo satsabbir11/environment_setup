@@ -20,3 +20,8 @@ https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-ubu
 
 for permission:
 sudo chmod 777 /var/www/html for read write
+
+if plugin not install:
+sudo usermod -aG www-data $USER
+sudo chown -R www-data:www-data /var/www
+sudo chmod -R 774 /var/www
