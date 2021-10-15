@@ -1,5 +1,34 @@
-https://youtu.be/GIwAsRNnoSI  for sublime text setup with MinGW.
+1.https://youtu.be/GIwAsRNnoSI  for sublime text setup with MinGW. for linux: just install g++ by run the command sudo apt install g++
 
-https://youtu.be/CACx2wrpF4I for sublime text setup with build system . also include inputf.in, outputf.in.
+2.https://youtu.be/CACx2wrpF4I for sublime text setup with build system . also include inputf.in, outputf.in.
+for linux:
+use build system:
 
-https://youtu.be/sRxpxFDGLXI for using terminas ( Terminal ) in Sublime text. 
+{
+    "shell_cmd": "g++ \"${file}\" -o \"${file_path}/${file_base_name}\"",
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "working_dir": "${file_path}",
+    "selector": "source.c, source.c++",
+
+    "variants":
+    [
+        {
+            "name": "Run",
+            "shell_cmd": "g++ \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\""
+        }
+    ]
+}
+
+and add it on top of your main function:
+     #ifndef ONLINE_JUDGE
+
+	   freopen("input.txt", "r", stdin);
+
+	f  reopen("output.txt", "w", stdout);
+
+    #endif
+
+3.https://youtu.be/sRxpxFDGLXI for using terminas ( Terminal ) in Sublime text.
+
+for linux:
+https://www.geeksforgeeks.org/how-to-use-terminal-in-sublime-text-editor/
