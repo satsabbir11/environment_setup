@@ -1,0 +1,22 @@
+https://www.codewithharry.com/blogpost/lamp-stack-ubuntu-20-04  for install lampstack
+
+for install phpmyadmin:
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo su
+apt-get install phpmyadmin -y
+
+press space key for selecting apache2 and then press tab key for ok.
+press ok then press yes set user(sabbir) and password(password) then ok.
+
+sudo mysql -p -u root
+CREATE USER 'sabbir'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILLEGES ON *.* TO 'sabbir'@'%' WITH GRANT OPTION;
+exit
+
+for install wordpress:
+https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-ubuntu-20-04-with-a-lamp-stack
+
+for permission:
+sudo chmod 777 /var/www/html for read write
