@@ -19,7 +19,8 @@ for install wordpress:
 https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-ubuntu-20-04-with-a-lamp-stack
 
 for permission:
-sudo chmod 777 /var/www/html for read write
+sudo chmod -R 777 /var/www/html
+for read write
 
 if plugin not install:
 sudo usermod -aG www-data $USER
