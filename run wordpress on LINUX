@@ -8,11 +8,11 @@ sudo su
 apt-get install phpmyadmin -y
 
 press space key for selecting apache2 and then press tab key for ok.
-press ok then press yes set user(sabbir) and password(password) then ok.
+press ok then press yes set password(password) then ok.
 
 sudo mysql -p -u root
-CREATE USER 'sabbir'@'%' IDENTIFIED BY 'password';
-GRANT ALL PRIVILLEGES ON *.* TO 'sabbir'@'%' WITH GRANT OPTION;
+CREATE USER 'admin'@'%' IDENTIFIED BY 'admin';
+GRANT ALL PRIVILLEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
 exit
 
 for install wordpress:
