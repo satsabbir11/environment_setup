@@ -12,7 +12,7 @@ press ok then press yes set password(password) then ok.
 
 sudo mysql -p -u root
 CREATE USER 'admin'@'%' IDENTIFIED BY 'admin';
-GRANT ALL PRIVILLEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
 exit
 
 for install wordpress:
