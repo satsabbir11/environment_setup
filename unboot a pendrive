@@ -1,0 +1,13 @@
+first formate your pendrive by selecting fat32
+then go to command promt
+
+diskpart
+
+listdisk
+select disk 0/1/2
+clean
+create partition primary
+format fs=fat32 quick
+exit
+
+cls
