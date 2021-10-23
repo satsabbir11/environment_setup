@@ -3,7 +3,7 @@ then go to command promt
 
 diskpart
 
-listdisk
+list disk
 select disk 0/1/2
 clean
 create partition primary
